@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./IMG/icono.png" type="image/x-icon">
+    <title>Ofertas</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Metal+Mania&family=Rubik+Marker+Hatch&family=Rubik+Maze&family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/493b21e64b.js" crossorigin="anonymous"></script>
+</head>
+<header>
+    <nav class="navbar navbar-expand-lg bg-success">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white" href="#">Verduleria Virtual</a><i class="fa-solid fa-apple-whole text-danger"></i>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active text-white" aria-current="page" href="index.html">Home</a>
+              <a class="nav-link active text-white" href="ofertas.html">Ofertas</a>
+              <a class="nav-link" href="#"></a>
+              <a class="nav-link disabled" aria-disabled="true"></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+</header>
+<body>
+    <br>
+    <div class="externo">
+        <div class=" interno pizarra">
+          <h3 class="rubik-maze-regular">Estas son las ofertas de esta semana</h3>
+        </div>
+    </div>   
+        <br>    
+        <br>
+    <div class="parent">
+        <div class="div1 gItem divCarro2"> 
+            <br>
+                 <h1><i class="fa-solid fa-cart-shopping letra_roja"></i></h1>
+                <div id="carrito"></div>
+                <br>
+                <button class="anchoButton" id="btnPagar" onclick="pagar()">Pagar</button>
+                <br>
+                <button class="anchoButton" id="btnLimpiar" onclick="limpiarCarrito()">Vaciar Carrito</button>
+            
+        </div>
+        <div class="div2 gItem">
+            <div class="centro">
+                <img src="./IMG/kiwi.jpg" alt="foto de kiwi" width="80%">
+            </div>
+            <div class="orden centro">
+                <h1 class="letra_roja">Kiwi por Kilo.    </h1>
+                <h1 class="centro">$1800</h1>
+            </div>
+            <div class="anchoDiv">
+                <button class="anchoButton" onclick="agregarProducto('Kiwi 1 Kg.', 1800)">Comprar</button>
+            </div>
+        </div>
+        <div class="div3 gItem">
+            <div class="centro">
+                <img src="./IMG/naranja.jpg" alt="foto de naranjas" width="80%">
+            </div>
+            <div class="orden centro">
+                <h1 class="letra_roja">Naranja para jugo por 3Kg.</h1>
+                <h1 class="centro">$2000</h1>
+            </div>
+            <div class="anchoDiv">
+                <button class="anchoButton" onclick="agregarProducto('Naranjas 3Kg.', 2000)">Comprar</button>
+            </div>
+                
+            
+            
+        </div>
+        <div class="div4 gItem">
+            <div class="centro">
+                <img src="./IMG/banana.jpg" alt="foto de bananas" width="80%">
+            </div>
+            <div class="orden centro">
+                <h1 class="letra_roja">Banana de Ecuador por 2 Kg.</h1>
+                <h1 class="centro">$2000</h1>
+            </div>
+            <div class="anchoDiv">
+                <button class="anchoButton" onclick="agregarProducto('Banana 2 Kg.', 2000)">Comprar</button>
+            </div>
+        </div>
+        <div class="div5 gItem">
+            <div class="centro">
+                <img src="./IMG/tomate.jpg" alt="foto de tomates" width="80%">
+            </div>
+            <div class="orden centro">
+                <h1 class="letra_roja">Tomates por 3 Kg.    </h1>
+                <h1 class="centro">$2500</h1>
+            </div>
+            <div class="anchoDiv">
+                <button class="anchoButton"onclick="agregarProducto('Tomates 3 Kg.', 2500)" >Comprar</button>
+            </div>
+        </div>
+        <div class="div6 gItem">
+            <div class="centro">
+                <img src="./IMG/zanahoria.jpg" alt="foto de zanahorias" width="80%">
+            </div>
+            <div class="orden centro">
+                <h1 class="letra_roja">Zanahoria por Kilo.  </h1>
+                <h1 class="centro">$1000</h1>
+            </div>
+            <div class="anchoDiv">
+                <button class="anchoButton" onclick="agregarProducto('Zanahoria 1 Kg.', 1000)">Comprar</button>
+            </div>
+        </div>
+        <div class="div7 gItem">
+            <div class="centro">
+                <img src="./IMG/papa.webp" alt="foto de papas" width="80%">
+            </div>
+            <div class="orden centro">
+                <h1 class="letra_roja">Papas blanca 3 Kg.</h1>
+                <h1 class="centro">$3000</h1>
+            </div>
+            <div class="anchoDiv">
+                <button class="anchoButton" onclick="agregarProducto('Papa blanca 3 Kg.', 3000)">Comprar</button>
+            </div>
+        </div>
+        <div class="div8 gItem">
+            <div class="centro">
+                <img src="./IMG/lechuga.jpg" alt="foto de lechuga" width="80%">
+            </div>
+            <div class="orden centro">
+                <h1 class="letra_roja">Lechuga por Kilo.</h1>
+                <h1 class="centro">$1200</h1>
+            </div>
+            <div class="anchoDiv">
+                <button class="anchoButton"onclick="agregarProducto('Lechuga 1 Kg.', 1200)" >Comprar</button>
+            </div>
+        </div>
+        <div class="div9 gItem">
+            <div class="centro">
+                <img src="./IMG/cebolla.jpg" alt="foto de cebollas" width="80%">
+            </div>
+            <div class="orden centro">
+                <h1 class="letra_roja">Cebolla por Kilo.  </h1>
+                <h1 class="centro">$1800</h1>
+            </div>
+            <div class="anchoDiv">
+                <button class="anchoButton" onclick="agregarProducto('Cebolla 1 Kg.', 1800)" >Comprar</button>
+            </div> 
+        </div>
+        
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>    
+    <script src="tienda.js"> </script>
+</body>
+
+<footer class="foo">
+    <h4 class="letra_blanca centro">Verduleria Virtual Derechos Reservados 2024</h4>
+</footer>
+</html>
